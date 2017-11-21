@@ -1,4 +1,4 @@
-import { compose, pipe } from 'util/fp/AsyncCompose';
+import { compose, pipe } from './index';
 
 const setNum = async (num) => new Promise(resolve => setTimeout(() => resolve(num), 100));
 const plusOne = async (param) => new Promise(resolve => setTimeout(() => resolve(param + 1), 100));
